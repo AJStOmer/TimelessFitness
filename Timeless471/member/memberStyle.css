@@ -1,0 +1,738 @@
+.parent{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    top: 9vh;
+    background-image: url("/Timeless471/member/images/backgroundc.jpeg");
+}
+.nav{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    color: black;
+    background-color: black;
+    align-items:center;
+    justify-content: space-around;
+    height: 9vh;
+    font-family: 'Bitter', serif;
+}
+.navName{
+    color: #E6E6FA;
+    letter-spacing: 3px;
+    font-size: 30px;
+}
+.nav-links{
+    align-items: center;
+    display: flex;
+    height: 100%;
+    padding: 0px;
+}
+.nav-links ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    /**width: 30rem;**/
+}
+.nav-links a{
+    color: #E6E6FA;
+    text-decoration: none;
+    justify-content: center;
+    letter-spacing: 3px;
+    display: block;
+    padding: 1.5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    font-size: 16px;
+}
+nav.active .nav-links li:hover a{
+    color: #E6E6FA;
+    background-color: #454545;
+    font-weight: bold;
+    cursor: pointer;
+}
+.nav-links li{
+    width: 100%;
+    list-style: none;
+}
+.nav-links li:hover a{
+    color: black;
+    background-color: lightgrey;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.toggle{
+    position: absolute;
+    top: 1.5rem;
+    right: 5%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    color: beige;
+}
+.toggle .bar{
+    height: 4px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+.toggle:hover{
+    cursor: pointer;
+}
+
+@media (max-width:950px) {
+    .toggle{
+        display: flex;
+    }
+    .nav-links{
+        background-color: black;
+        flex-direction:column;
+        display: none;
+        width: 100%;
+    }
+    .nav{
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-links ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+    .nav-links li a{
+        width: 100%;
+        padding-left: 0px;
+        padding-bottom: 1.5rem;
+    }
+    .nav-links li:hover a{
+        color: #E6E6FA;
+        font-weight: bold;
+        background-color: #454545;
+    }
+    .navName.active{
+        padding-top: 2.5rem;
+        height: 70px;
+        align-items: center;
+        margin: 0;
+    }
+    .nav-links.active{
+        text-align: center;
+        display: flex;
+    }
+    .nav.active{
+        height: 40vh;
+        background-color: black;
+    }
+    .image{
+        display: none;
+    }
+}
+/*----------------Home------------------*/
+.separator{
+    height: 10vh;
+}
+.AnnounceDiv{
+    padding-left: 15vw;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+.announcements{
+    padding-top: 25px;
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+    justify-content: center;
+    background: transparent;
+    height: 30vh;
+    width: 80%;
+    overflow:hidden; 
+    overflow-y:scroll;
+    margin: 0px;
+}
+.aHeader{
+    color: black;
+    padding-left: 33%;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.announcements li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+h8{
+    font-size: 17px;
+    color:gray;
+}
+.output{
+    padding-left: 50%;
+    padding-top: 25%;
+}
+
+.BookingDiv{
+    padding-left: 15vw;
+    padding-top: 2vw;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.bookings{
+    color: black;
+    border-style: solid;
+    border-width: 5px;
+    justify-content: center;
+    background-color:transparent;
+    height: 33vh;
+    width: 80%;
+    overflow:hidden; 
+    overflow-y: scroll;
+}
+
+.bHeader{
+    color: black;
+    padding-left: 33%;
+    font-size: 30px;
+}
+.bookings li{
+    display: inline-block;
+    list-style: none;
+    margin: 15px; 
+}
+
+h2{
+    padding-left: 40%;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.separatorProg{
+    height: 15vh;
+}
+/*---------------Book-------------------*/
+
+.separatorBook{
+    height: 30vh;
+}
+
+.bookT{
+    padding-left: 18vw;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    height: 35vh;
+    width: 80%;
+}
+.bForm{
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+    background-color: transparent;
+    height: 35vh;
+    width: 80%;
+}
+h1{
+    padding-left: 28%;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.mSName{
+    padding-left: 28%;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Pexerc{
+    padding-left: 32%;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Smachine{
+    padding-left: 32%;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Scourt{
+    padding-left: 34%;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.BookSelections{
+    margin-left: 32%;
+    margin-top: 0%;
+    width: 250px;
+    height: 80px;
+    background-color: transparent;
+    border-radius: 0px;
+    border-width: 2px;
+    border-color: black;
+}
+.BookSelections option{
+    height: 20px;
+}
+.machinesubmit{
+    border-color: black;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 2px;
+    font-size: 15px;
+    margin: 20px;
+    margin-bottom: 0px;
+    margin-top: 25px;
+    margin-left: 32%;
+    width: 250px;
+    height: 30px;
+    background-color: transparent;
+}
+.machinesubmit:hover{
+    background-color: darkgray;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.booksubmit{
+    border-color: black;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 2px;
+    font-size: 15px;
+    margin: 20px;
+    margin-bottom: 0px;
+    margin-top: 0%;
+    margin-left: 32%;
+    width: 250px;
+    height: 30px;
+    background-color: transparent;
+}
+.booksubmit1{
+    font-size: 15px;
+    border-color: black;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 2px;
+    margin: 20px;
+    margin-bottom: 0px;
+    margin-left: 32%;
+    width: 250px;
+    height: 30px;
+    background-color: transparent;
+}
+.booksubmit:hover{
+    background-color: darkgray;
+    font-weight: bold;
+    cursor: pointer;
+}
+.booksubmit1:hover{
+    background-color: darkgray;
+    font-weight: bold;
+    cursor: pointer;
+}
+.booksubmit2:hover{
+    background-color: darkgray;
+    font-weight: bold;
+    cursor: pointer;
+}
+.booksubmit2{
+    font-size: 15px;
+    border-color: black;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 2px;
+    margin: 20px;
+    margin-bottom: 0px;
+    margin-left: 32%;
+    width: 250px;
+    height: 30px;
+    background-color: transparent;
+}
+
+.errSelect{
+    padding-left: 35%;
+    font-size: 15px;
+    color: red;
+}
+
+.progT{
+    padding-left: 18vw;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    height: 30vh;
+    width: 80%;
+}
+
+.pForm{
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+    background-color: transparent;
+    height: 30vh;
+    width: 80%;
+}
+.programelections{
+    margin-left: 32%;
+    margin-top: 2%;
+    width: 250px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 0;
+}
+.ProgSelections option{
+    height: 10px;
+}
+.progsubmit{
+    border-color: black;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 2px;
+    margin: 20px;
+    margin-bottom: 0px;
+    margin-left: 32%;
+    width: 250px;
+    height: 30px;
+    background-color: transparent;
+}
+
+.errSelect{
+    padding-left: 35%;
+    font-size: 15px;
+    color: red;
+}
+.pInfo{
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+    background-color: transparent;
+    height: 90vh;
+    width: 80%;
+}
+.ProgramT{
+    padding-left: 18vw;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    height: 110vh;
+    width: 80%;
+}
+
+
+/**-----------Machine Info------------*/
+.mInfo{
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+    background-color: transparent;
+    height: 59vh;
+    width: 80%;
+}
+.machineT{
+    padding-left: 18vw;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    height: 45vh;
+    width: 80%;
+}
+.exercises li{
+    list-style: none;
+    margin: 15px; 
+}
+
+.exercises{
+    margin-right: 50px;
+    margin-left: 50px;
+    color: black;
+    border-style: solid;
+    border-width: 5px;
+    justify-content: center;
+    background-color:transparent;
+    height: 20vh;
+    width: 80%;
+    overflow:hidden; 
+    overflow-y: scroll;
+
+}
+.machineBooksubmit:hover{
+    background-color: darkgray;
+    font-weight: bold;
+    cursor: pointer;
+}
+.timeSelections:hover{
+    cursor: pointer;
+    background-color: darkgray;
+}
+.dateS:hover{
+    cursor: pointer;
+    background-color: darkgray;
+}
+.machineBooksubmit{
+    font-size: 15px;
+    border-color: black;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 2px;
+    margin: 20px;
+    margin-bottom: 0px;
+    margin-left: 35%;
+    width: 250px;
+    height: 30px;
+    background-color: transparent;
+}
+.dateS{
+    width: 200px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+}
+.timeSelections{
+    width: 200px;
+    height: 20px;
+    background-color: transparent;
+    border-radius: 0;
+}
+.Stitle{
+    padding-left: 32%;
+    margin-bottom: 50px;
+    padding-bottom: 40%;
+}
+/**---------------------------------*/
+.SuccessDiv{
+    padding-left: 30vw;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    height: 35vh;
+    width: 50%;
+}
+.successMsg{
+    padding-top: 25px;
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+    justify-content: center;
+    background-color:transparent;
+    height: 22vh;
+    width: 70%;
+    overflow:hidden; 
+    overflow-y:scroll;
+    margin: 0px;
+}
+.sHeader2{
+    padding-left: 22%;
+    font-size: 35px;
+}
+.sHeader1{
+    padding-left: 25%;
+    font-size: 20px;
+}
+.St{
+    color: black;
+    padding-left: 12%;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.announcements li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+/**---------------------------------*/
+.errSelectC{
+    color: red;
+    font-size: 15px;
+    padding-left: 30%;
+    padding-top: 0px;
+}
+.CourtSelections:hover{
+    background-color: darkgray;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.CourtSelections{
+    margin-left: 35%;
+    margin-top: 0%;
+    margin-bottom: 2%;
+    width: 250px;
+    height: 60px;
+    background-color: transparent;
+    border-radius: 0;
+    border-color: black;
+    border-width: 2px;
+}
+
+.cForm{
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+    background-color: transparent;
+    height: 40vh;
+    width: 80%;
+}
+.SelProg{
+    padding-left: 30%;
+    font-size: 30px;
+}
+.BookSelections:hover{
+    cursor: pointer;
+    background-color: darkgray;
+}
+
+@media (max-width:950px) {
+.errSelect{
+    padding-left: 20%;
+}
+.SelProg{
+    font-size: 25px;
+}
+.Stitle{
+    padding-left: 25%;
+}
+.Pexerc{
+    padding-left: 22%;
+}
+
+.mSName{
+    padding-left: 25%;
+    font-size: 25px;
+}
+.exercises{
+    width: 70%;
+    padding-left: 10%;
+}
+.SbookT{
+    padding-left: 20%;
+}
+.booksubmit{
+    margin-left: 28%;
+    }
+.machinesubmit{
+    margin-left: 28%;
+}
+.BookSelections{
+    margin-left: 28%;
+}
+
+.booksubmit1{
+    margin-left: 28%;
+    }
+
+.booksubmit2{
+    margin-left: 28%;
+    }
+}
+@media (max-width:975px) {
+    .St{
+        padding-left: 8%;
+    }
+    .sHeader2{
+        padding-left: 8%;
+        font-size: 30px;
+    }
+    .sHeader1{
+        padding-left: 8%;
+    }
+}
+    
+@media (max-width:750px) {
+    .aHeader{
+        padding-left: 25%;
+    }
+    .bHeader{
+        padding-left: 25%;
+    }
+    h2{
+        padding-left: 30%;
+    }
+    .errSelect{
+        padding-left: 5%;
+    }
+.St{
+    padding-left: 0%;
+    font-size: 27px;
+}
+.sHeader2{
+    padding-left: 0%;
+    font-size: 30px;
+}
+.sHeader1{
+    padding-left: 0%;
+}
+.booksubmit{
+    margin-left: 25%;
+    }
+.booksubmit1{
+    margin-left: 25%;
+    }
+.booksubmit2{
+    margin-left: 25%;
+    }
+.SbookT{
+    padding-left: 17%;
+    font-size: 30px;
+}
+.Stitle{
+    padding-left: 15%;
+}
+.machineBooksubmit{
+    margin-left: 28%;
+}
+}
+@media (max-width:650px) {
+    .SelProg{
+        padding-left: 20%;
+    }
+    .errSelectC{
+        padding-left: 15%;
+    }
+    .Scourt{
+        padding-left: 24%;
+    }
+    .CourtSelections{
+        margin-left: 20%;
+    }
+    .BookSelections{
+        margin-left: 20%;
+    }
+    .SbookT{
+        padding-left: 7%;
+    }
+    .booksubmit{
+        margin-left: 17%;
+        }
+
+    .booksubmit1{
+        margin-left: 17%;
+        }
+
+    .booksubmit2{
+        margin-left: 17%;
+        }
+    .machinesubmit{
+        margin-left: 20%;
+    }
+    .machineBooksubmit{
+        margin-left: 20%;
+    }    
+    .Stitle{
+        padding-left: 10%;
+    }    
+    .Pexerc{
+        padding-left: 8%;
+    }
+    
+    .mSName{
+        padding-left: 12%;
+        font-size: 25px;
+    }
+    .exercises{
+        width: 70%;
+        padding-left: 6%;
+    }
+    }
+
+
